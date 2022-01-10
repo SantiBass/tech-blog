@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Post,
-        attributes: ['id', 'title', 'content', 'created_at']
+        attributes: ['id', 'title', 'postContent', 'created_at']
       },
       {
         model: Comment,
@@ -34,9 +34,7 @@ router.get('/:id', (req, res) => {
       },
       {
         model: Post,
-        attributes: ['title'],
-        through: Vote,
-        as: 'voted_posts'
+        attributes: ['title']
       }
     ]
   })
@@ -57,7 +55,6 @@ router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
     username: req.body.username,
-    email: req.body.email,
     password: req.body.password
   })
     .then(dbUserData => {
@@ -116,8 +113,7 @@ router.post('/logout', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-  // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
-
+  
   // pass in req.body instead to only update what's passed through
   User.update(req.body, {
     individualHooks: true,
