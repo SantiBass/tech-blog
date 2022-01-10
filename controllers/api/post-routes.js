@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     attributes: [
       'id',
       'title',
-      'content',
+      'contentOfPost',
       'created_at',
     ],
     order: [
@@ -46,13 +46,13 @@ router.get('/:id', (req, res) => {
     attributes: [
         'id',
         'title',
-        'content',
+        'postContent',
         'created_at',
     ],
     include: [
       {
         model: User,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+        attributes: ['id', 'contentOfPost', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
           attributes: ['username']
@@ -92,7 +92,7 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/:id', withAuth, (req, res) => {
-  Post.upvote({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
+  Post.update({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
     .then(updatedData => res.json(updatedData))
     .catch(err => {
       console.log(err);
