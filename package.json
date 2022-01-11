@@ -9,6 +9,8 @@
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
-    "sequelize": "^6.12.5"
+    "seed": "^0.4.4",
+    "seeds": "^2.3.1",
+    "sequelize": "^6.13.0"
   }
 }
