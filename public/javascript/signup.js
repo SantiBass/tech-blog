@@ -17,10 +17,10 @@ async function signupFormHandler(event) {
   
       if (response.ok) {
         console.log("it's working")
-        document.location.replace('/dashboard/');
+        document.location.replace('/dashboard');
       } else {
         alert(response.statusText);
       }
     }
   }
-  document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+  document.querySelector('#signup-form').addEventListener('submit', signupFormHandler);
