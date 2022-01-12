@@ -78,7 +78,9 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-
+    console.log("req.body.title", req.body.title)
+    console.log("req.body.content", req.body.content)
+    console.log("req.session.user_id", req.session.user_id)
   Post.create({
     title: req.body.title,
     content: req.body.content,
@@ -92,7 +94,15 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/:id', withAuth, (req, res) => {
-  Post.update({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
+  Post.update({
+    title: req.body.title,
+    content: req.body.content,
+       }, 
+       { 
+           where:{
+               id:req.params.id
+           }
+       })
     .then(updatedData => res.json(updatedData))
     .catch(err => {
       console.log(err);
@@ -102,9 +112,9 @@ router.put('/:id', withAuth, (req, res) => {
 
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
-    {
-      title: req.body.title
-    },
+    // {
+    //   title: req.body.title
+    // },
     {
       where: {
         id: req.params.id
