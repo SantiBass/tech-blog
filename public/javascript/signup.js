@@ -1,4 +1,5 @@
 async function signupFormHandler(event) {
+  console.log("this works")
     event.preventDefault();
   
     const username = document.querySelector('#username-signup').value.trim();
@@ -15,6 +16,7 @@ async function signupFormHandler(event) {
       });
   
       if (response.ok) {
+        console.log("it's working")
         document.location.replace('/dashboard/');
       } else {
         alert(response.statusText);

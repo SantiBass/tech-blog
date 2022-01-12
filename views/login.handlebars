@@ -1,24 +1,16 @@
-<form class="login-form">
- <div>
-    <label for="username-login">username:</label>
-    <input type="text" id="username-login" />
-  </div>
-    <label for="password-login">password: </label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
-
-<form class="signup-form">
-  
- 
-  
-  <div>
-    <button type="submit">sign up</button>
-  </div>
-</form>
+<div class="card">
+    <h3 class="card-header"> Login
+    </h3>
+    <form class="card-body" id="login-form">
+   
+    <label for="username-login" class="form-label">Username</label>
+    <input type="text" id="username-login" autofocus="true" class="form-imput"/>
+    
+    <label class="form-label" for="password-login">Password</label>
+    <input id="password-login" type="password" class="form-input" />
+    <button type="submit" class="btn">login now</button>
+    <a class="login-link" href="/signup">Signup instead</a>
+ </form>
+</div>
 
 <script src="/javascript/login.js"></script>
-{{!-- <script src="/javascript/singup.js"></script> --}}
