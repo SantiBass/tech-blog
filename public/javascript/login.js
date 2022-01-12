@@ -1,4 +1,5 @@
 async function loginFormHandler(event) {
+    console.log('this work');
     event.preventDefault();
   
     const username = document.querySelector('#username-login').value.trim();
