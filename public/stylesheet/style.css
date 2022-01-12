@@ -20,7 +20,7 @@ body{
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #000001;
   font-weight: bold;
   transition: color .1s;
 }
@@ -30,10 +30,10 @@ a:hover {
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #a36b22;
   border: 0;
   padding: 1%;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
