@@ -10,7 +10,7 @@ async function editFormHandler(event) {
       body: JSON.stringify({
         post_id: id,
         title,
-        postContent
+        content
       }),
       headers: {
         'Content-Type': 'application/json'

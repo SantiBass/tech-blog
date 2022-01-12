@@ -12,5 +12,27 @@
     "seed": "^0.4.4",
     "seeds": "^2.3.1",
     "sequelize": "^6.13.0"
-  }
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiBass/the-fire-pit-can-be-seen-using-this-tech-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiBass/the-fire-pit-can-be-seen-using-this-tech-blog/issues"
+  },
+  "homepage": "https://github.com/SantiBass/the-fire-pit-can-be-seen-using-this-tech-blog#readme",
+  "description": ""
 }
