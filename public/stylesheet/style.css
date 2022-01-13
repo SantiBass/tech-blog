@@ -20,7 +20,7 @@ body{
 
 a {
   text-decoration: none;
-  color: #000001;
+  color: #1a1adc;
   font-weight: bold;
   transition: color .1s;
 }
@@ -33,7 +33,7 @@ button {
   background-color: #a36b22;
   border: 0;
   padding: 1%;
-  color: rgb(255, 255, 255);
+  color: rgb(14, 1, 1);
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -52,7 +52,7 @@ button:hover {
 textarea, input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(78, 126, 177);
 }
 
 textarea:focus, input:focus {
@@ -83,7 +83,7 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgb(18, 17, 17);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,7 +105,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #000000;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -160,7 +160,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #d06f0f;
 }
 
 .comment .meta {
@@ -178,7 +178,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(49, 28, 28);
   display: flex;
   justify-content: center;
   padding: 1%;
