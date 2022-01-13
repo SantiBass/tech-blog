@@ -8,7 +8,9 @@ body{
   margin: 0;
   font-family: sans-serif;
   background-color: lightgreen ;
+  background-size: cover;
   background-image: url("../images/jj-ying-8bghKxNU1j0-unsplash.jpg");
+  
   
 } nav{
     width: 100%;
@@ -20,11 +22,15 @@ body{
 
 a {
   text-decoration: none;
-  color: #1a1adc;
+  color: #dcdce9;
   font-weight: bold;
   transition: color .1s;
 }
-
+#title{
+  font-family: ;
+  color: #dcdce9;
+  font-size: 50px;
+}
 a:hover {
   color: #3486eb;
 }
@@ -52,7 +58,7 @@ button:hover {
 textarea, input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid rgb(78, 126, 177);
+  border: 1px solid rgb(8, 32, 57);
 }
 
 textarea:focus, input:focus {
@@ -179,6 +185,7 @@ main {
 }
 
 footer {
+  color: #3486eb;
   border-top: 1px solid rgb(49, 28, 28);
   display: flex;
   justify-content: center;
