@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description.
-### "The Tech Blog" is a project oriented to use the Model View.Controller(MVC). 
+### "The Tech Blog" is a project that uses the Model View.Controller(MVC). 
 ### This is a simple application but a challenging one too because of the use of new knowledge about "handlerbars.js".
 ### You can see the application in action by clicking this link: [Tech Blog.](https://teckblog.herokuapp.com/)
 ### This apllication was deployed through: [Heroku](https://devcenter.heroku.com/) .
