@@ -54,4 +54,5 @@
 ## Questions
 ### If you have any questions, please send me an email @ sibarraryan@gmail.com . 
 ### You can visit my GitHub: [SantiBass.](https://github.com/SantiBass)
+### Video link of the app in action: [The Tech Blog video](https://watch.screencastify.com/v/HxguOZmh7muRxHqrBR53) .
 ### Also, you can put this application to action by using this link: [The Tech Blog](https://devcenter.heroku.com/) .
