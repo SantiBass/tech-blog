@@ -25,10 +25,7 @@
 ### You can find information about MIT license here: [MIT License.](https://choosealicense.com/licenses/mit/)
 
 ## Usage
-#### Using this application is very simple. We are presented with a home page and we are able to see some posts.
-#### In order to create a post, we need to create an account or login if we already have one. Clicking on the dashboard or login buttons
-#### allow us to reach the login/signup page. Once we are logged in, we are able to create new posts and comment on someone else's post.
-#### And the final step is to logout by clicking the logout button.
+#### Using this application is very simple. We are presented with a home page and we are able to see some posts. In order to create a post, we need to create an account or login if we already have one. Clicking on the dashboard or login buttons allow us to reach the login/signup page. Once we are logged in, we are able to create new posts and comment on someone else's post. And the final step is to logout by clicking the logout button.
 
 
 ## Credits
