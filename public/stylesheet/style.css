@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
+  padding: 0;
 }
 
 body{
-  height: 100%;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -12,10 +14,19 @@ body{
   background-image: url("../images/jj-ying-8bghKxNU1j0-unsplash.jpg");
   
   
-} nav{
+} 
+
+.navbar{
+  margin-bottom: 50px;
+  border-bottom : rgb(241, 243, 249) 2px solid; 
+  padding-left: 0;
+  font-weight: bold;
+}
+
+nav{
     width: 100%;
     height: 20vh;
-    font-size: 20px;
+    font-size: 60px;
     color: black;
     background-color: rgb(46, 14, 14);
 }
@@ -23,36 +34,51 @@ body{
 a {
   text-decoration: none;
   color: #dcdce9;
-  font-weight: bold;
+  
   transition: color .1s;
+  
 }
 #title{
-  font-family: ;
+  
   color: #dcdce9;
-  font-size: 50px;
+  font-size: 40px;
 }
 a:hover {
-  color: #3486eb;
+  color: #5459e8;
 }
-
+.yourpost{
+  color: white;
+  font-size: 30px;
+}
 button {
-  background-color: #a36b22;
+  /* background-color: #ee8f12; */
   border: 0;
   padding: 1%;
-  color: rgb(14, 1, 1);
+  color: rgb(141, 162, 49);
   font-weight: bold;
-  transition: background-color .1s;
+  transition: background-color .10s;
   cursor: pointer;
   border-radius: 5px;
 }
-
+/* update and create button hover */
 button:hover {
-  background-color: #3486eb;
+  background-color: #425bbd;
+  color: white;
 }
-
-.post-list {
-  margin: 0;
-  padding: 0;
+.delete-post-btn {
+  background-color: #711515;
+  color: white;
+}
+#update {
+color: white;
+ background-color: rgb(12, 48, 28);
+}
+#loginbtn{
+  background-color: #0a47c9;
+  color: white;
+}
+#newpost{
+  color: white;
 }
 
 textarea, input {
@@ -67,7 +93,7 @@ textarea:focus, input:focus {
 }
 
 textarea {
-  min-width: 40%;
+  min-width: 50%;
   min-height: 100px;
 }
 
@@ -101,36 +127,34 @@ header h1 {
 }
 
 main {
-  flex: 1;
-  padding: 2% 4%;
+  
+  padding:0;
 }
 
 .btn-no-style {
-  background: none;
+  background: rgb(60, 60, 196);
   border: none;
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #000000;
+  color: #221e1e;
   font-size: 100%;
   font-weight: bold;
-  transition: color .1s;
+ transition: color 3s; 
   margin-left: 16px;
 }
 
 .btn-no-style:hover {
   background: none;
-  color: #41464d;
+  color: #d7401a;
 }
 
+#login-form{
+  opacity: 90%;
+  background-image: url("../images/jj-ying-8bghKxNU1j0-unsplash.jpg");
 
-.delete-post-btn {
-  background-color: #f98282;
+  
 }
-.btnUpdate {
-  background-color: #5993e9;
-}
-
 
 .post {
   margin-bottom: 2%;
@@ -147,35 +171,48 @@ main {
   display: block;
   margin: -1.5% 0 2% 0;
 }
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
+/* submit button */
+#submit{
+  color: white;
+  background-color: rgb(32, 62, 113);
 }
 
-.upvote-btn:hover {
-  background-color: #9c5e13;
+/* comment area */
+#comment {
+  width: 50%;
+  background-color: #cec7be;
+  font-size: 20px;
 }
 
 .comment-form {
-  margin-bottom: 5%;
+  margin-bottom: 5%
 }
 
 .comment {
+  font-size: 20px;
   padding: 1%;
   margin-bottom: 1%;
 }
 
 .comment:nth-child(odd) {
-  background-color: #d06f0f;
+  background-color: #d5c0c0;
 }
 
 .comment .meta {
-  font-size: 90%;
+  font-size: 15px;
   margin-bottom: .5%;
-  opacity: .6;
+  opacity: 1;
+  /* background-color: rgb(36, 6, 6); */
 }
-
+.card{
+  /* background-image: url("../images/cristiano-firmani-tmTidmpILWw-unsplash\ \(1\).jpg"); */
+  background-color: black;
+  color: white;
+  opacity: 90%;
+  border: 1px rgb(61, 60, 60) solid;
+  border-radius: 10px;
+  margin: 3px;
+}
 .new-post-form input {
   width: 300px;
 }
@@ -185,10 +222,39 @@ main {
 }
 
 footer {
-  color: #3486eb;
+  height: auto;
+  color: #fa7500;
   border-top: 1px solid rgb(49, 28, 28);
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+.link-color {
+  color: var(--tertiary);
+  padding: 10px;
+  margin: 10px
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
