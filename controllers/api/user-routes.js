@@ -80,8 +80,9 @@ router.post('/login', (req, res) => {
     }
   }).then(dbUserData => {
     if (!dbUserData) {
-      res.status(400).json({ message: 'No user with that Name!' }); console.console.log(username);
-      console.console.log(password);
+      res.status(400).json({ message: 'No user with that Name!' }); 
+      // console.console.log(username);
+     
       return;
     }
 
